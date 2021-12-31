@@ -1,6 +1,4 @@
 #!/bin/bash -e
-version=3.22
-build=1
 apt-get update -y
 apt upgrade -y
 apt-get install gcc-11 g++-11 -y
