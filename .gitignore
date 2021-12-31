@@ -15,4 +15,4 @@ _deps
 
 # build target
 build/*
-temp/*
+temp*
