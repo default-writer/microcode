@@ -1,10 +1,11 @@
 #!/bin/bash -e
 version=3.22
 build=1
+sudo apt-get update
 sudo apt remove '^cmake.*' -y --purge
 sudo apt install build-essential libtool autoconf unzip wget libssl-dev -y
 sudo apt autoremove -y
-[! -d "$PWD/temp" ] && rm -rf $PWD/temp
+[ -d "$PWD/temp" ] && rm -rf $PWD/temp
 mkdir $PWD/temp
 cd $PWD/temp
 wget https://cmake.org/files/v$version/cmake-$version.$build.tar.gz
