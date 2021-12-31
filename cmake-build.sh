@@ -4,7 +4,7 @@ build=1
 sudo apt-get update -y
 sudo apt upgrade -y
 sudo apt remove '^cmake.*' -y --purge
-sudo apt-get install g++-11-x86-64-linux-gnu build-essential libtool autoconf unzip wget libssl-dev -y
+sudo apt-get install gcc-11 g++-11 build-essential libtool autoconf unzip wget libssl-dev -y
 sudo apt autoremove -y
 [ -d "$PWD/temp" ] && sudo rm -rf $PWD/temp
 mkdir $PWD/temp
