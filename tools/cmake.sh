@@ -15,4 +15,5 @@ cd cmake-$version.$build/
 make -j$(nproc)
 make install
 [ -d "$PWD/temp" ] && rm -rf $PWD/temp
+[ -d "$PWD/build" ] && rm -rf $PWD/build
 ln -sf /usr/local/bin/cmake /usr/bin/cmake
