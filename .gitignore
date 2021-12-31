@@ -14,5 +14,5 @@ _deps
 .history
 
 # build target
-build/*
+build*
 temp*
