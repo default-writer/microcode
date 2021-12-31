@@ -4,7 +4,7 @@ build=1
 apt-get update -y
 apt upgrade -y
 apt remove '^cmake.*' -y --purge
-apt-get install build-essential libtool autoconf unzip wget libssl-dev -y
+apt-get install build-essential libtool autoconf unzip wget libssl-dev valgrind -y
 apt autoremove -y
 [ ! -d "$PWD/temp" ] && mkdir $PWD/temp
 cd $PWD/temp

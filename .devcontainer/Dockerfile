@@ -16,7 +16,7 @@ ENV build=1
 
 # CMake 3.22.1
 RUN apt-get update \
-    && apt-get install build-essential libtool autoconf unzip wget libssl-dev -y \
+    && apt-get install build-essential libtool autoconf unzip wget libssl-dev valgrind -y \
     && apt autoremove -y \
     && mkdir /temp \
     && wget https://cmake.org/files/v$version/cmake-$version.$build.tar.gz \
