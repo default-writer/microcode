@@ -14,3 +14,4 @@ cd cmake-$version.$build/
 ./bootstrap
 make -j$(nproc)
 sudo make install
+[ -d "$PWD/temp" ] && rm -rf $PWD/temp
