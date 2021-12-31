@@ -11,7 +11,7 @@ CTestTestfile.cmake
 _deps
 
 # history
-.history
+.history/*
 
 # build target
 build*
