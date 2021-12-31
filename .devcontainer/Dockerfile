@@ -5,5 +5,8 @@ ARG VARIANT="bullseye"
 FROM mcr.microsoft.com/vscode/devcontainers/cpp:0-${VARIANT}
 
 # [Optional] Uncomment this section to install additional packages.
-# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-#     && apt-get -y install --no-install-recommends <your-package-list-here>
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends build-essential manpages-dev gcc-11 g++-11 build-essential libtool autoconf unzip wget libssl-dev \
+    && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 110 \
+    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 110 \
+    && update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-11 110
