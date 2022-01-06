@@ -11,6 +11,7 @@
             "program": "${workspaceFolder}/build/${workspaceFolderBasename}",
             "targetArchitecture": "x86_64",
             "args": [],
+            "preLaunchTask": "build",
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
